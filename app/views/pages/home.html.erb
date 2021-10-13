@@ -1,0 +1,45 @@
+<div class="container">
+<h1> Speedybuilder </h1>
+
+	<div class = "form-styling">
+		<h3>Page to Scrape</h3>
+		<form action="/" method="get">
+			<input type="text" name="url" placeholder="https://www.lightspeedhq.com">
+			<input class="btn btn-primary" type="submit"></input>
+		</form>
+	</div>
+
+	<div class = "form-styling">
+		<div>
+			<h3>Scraped text</h3>
+			<form>
+				<textarea class = "text-box"id="test-id" >
+					<%= @scraped_text %>
+				</textarea><br />
+				<button class="btn btn-primary" id="submit-conversion" type="button">Analyse</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- <div> -->
+		<!-- <h2> Converted text</h2> -->
+		<!-- <form> -->
+			<!-- <textarea  id ="converted-text"style="width:500px; height: 500px;" > -->
+			
+			<!-- </textarea><br /> -->
+
+			<!-- <button class="btn btn-primary"   id="jsonconversion" type="button">Convert</button> -->
+		<!-- </form>
+	</div> -->
+
+	<div class = "form-styling">
+		<h3> Converted text</h3>
+		<form action="/generatedfile" method="get">
+			<input id ="converted-text" class = "text-box" type="text_area" name="txt"> <br/>
+			<input class="btn btn-primary" type="submit">
+		</form>
+	</div>
+</div>
+
+
+
