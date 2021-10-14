@@ -1,5 +1,6 @@
 <div class="container">
-<h1> Speedybuilder </h1>
+	<center><h1 class="main-header"><%= link_to "SpeedyBuilder", root_path %></h1>  </center>
+
 
 	<div class = "form-styling">
 		<h3>Page to Scrape</h3>
@@ -34,8 +35,10 @@
 
 	<div class = "form-styling">
 		<h3> Converted text</h3>
+		<p class="loading-txt" hidden ></p>
 		<form action="/generatedfile" method="get">
-			<input id ="converted-text" class = "text-box" type="text_area" name="txt"> <br/>
+			<textarea class = "text-box" id="converted-text" type="text" name="txt" ></textarea> <br />
+			<!-- <input id ="converted-text" class = "text-box" type="text" name="txt"> <br/> -->
 			<input class="btn btn-primary" type="submit">
 		</form>
 	</div>
